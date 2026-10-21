@@ -1,0 +1,9 @@
+# 16bit little-endian headerless Bayer RAW
+width 5760
+height 3840
+bayer RGGB
+black 2047 2047 2047 2048
+white 15000
+wb 1.649 1.000 2.165
+cam_to_xyz 0.73848164 -0.01082131 0.22287917 0.22295260 0.88205075 -0.10500793 0.01363687 -0.53604183 1.61108966
+camera Canon EOS 5D Mark III

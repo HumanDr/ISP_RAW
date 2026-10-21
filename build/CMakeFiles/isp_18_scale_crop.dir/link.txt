@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/isp_18_scale_crop.dir/stages/18_scale_crop/main.cpp.o -o isp_18_scale_crop  libisp_core.a /usr/lib/x86_64-linux-gnu/libpng.so /usr/lib/x86_64-linux-gnu/libz.so 

@@ -1,0 +1,2 @@
+zh-CN-XiaoyiNeural|-8%|-5Hz
+RGB 域先做色度降噪，再做 X-talking 串扰校正，然后用 CCM 把相机 RGB 变到线性 sRGB。CCM 先把相机 RGB 变到 XYZ，再做 Bradford 色适应到 D65，最后乘 XYZ 到 sRGB 的矩阵。HDR/WDR 只压缩超过 1 的高光；Gamma 做自动曝光和 sRGB 编码；最后 Color Space 把 RGB 变成 YUV。

@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/isp_11_gamma.dir/stages/11_gamma/main.cpp.o -o isp_11_gamma  libisp_core.a /usr/lib/x86_64-linux-gnu/libpng.so /usr/lib/x86_64-linux-gnu/libz.so 
