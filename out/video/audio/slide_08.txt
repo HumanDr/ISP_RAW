@@ -1,2 +1,0 @@
-zh-CN-XiaoyiNeural|-8%|-5Hz
-工程结构是一个 stage 一个目录，输入输出用 .isp，中间结果随时能看。中间 .isp 文件带头信息，isp_dump 可以随时把任何一步导成 PNG。你可以只改一个 stage，再编译一次，十三秒后就能看到差异。
