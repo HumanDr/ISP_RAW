@@ -1,7 +1,7 @@
 CMakeFiles/isp_core.dir/common/src/image.cpp.o: \
- /home/lchin/ISP_ws/ISP_Raw_Course/common/src/image.cpp \
+ /home/lchin/ISP_Raw_Course/common/src/image.cpp \
  /usr/include/stdc-predef.h \
- /home/lchin/ISP_ws/ISP_Raw_Course/common/include/isp/image.h \
+ /home/lchin/ISP_Raw_Course/common/include/isp/image.h \
  /usr/include/c++/11/cstddef \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

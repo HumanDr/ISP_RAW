@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/lchin/ISP_ws/ISP_Raw_Course/common/include
+CXX_INCLUDES = -I/home/lchin/ISP_Raw_Course/common/include
 
 CXX_FLAGS = -O3 -DNDEBUG -O2 -Wall -Wextra -std=c++17
 

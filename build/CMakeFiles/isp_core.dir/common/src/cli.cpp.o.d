@@ -1,7 +1,6 @@
 CMakeFiles/isp_core.dir/common/src/cli.cpp.o: \
- /home/lchin/ISP_ws/ISP_Raw_Course/common/src/cli.cpp \
- /usr/include/stdc-predef.h \
- /home/lchin/ISP_ws/ISP_Raw_Course/common/include/isp/cli.h \
+ /home/lchin/ISP_Raw_Course/common/src/cli.cpp /usr/include/stdc-predef.h \
+ /home/lchin/ISP_Raw_Course/common/include/isp/cli.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/type_traits \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -149,7 +148,7 @@ CMakeFiles/isp_core.dir/common/src/cli.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/lchin/ISP_ws/ISP_Raw_Course/common/include/isp/image.h \
+ /home/lchin/ISP_Raw_Course/common/include/isp/image.h \
  /usr/include/c++/11/cstddef /usr/include/c++/11/algorithm \
  /usr/include/c++/11/bits/stl_algo.h \
  /usr/include/c++/11/bits/algorithmfwd.h \

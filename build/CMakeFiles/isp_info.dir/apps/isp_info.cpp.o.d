@@ -1,6 +1,6 @@
 CMakeFiles/isp_info.dir/apps/isp_info.cpp.o: \
- /home/lchin/ISP_ws/ISP_Raw_Course/apps/isp_info.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/11/cstdio \
+ /home/lchin/ISP_Raw_Course/apps/isp_info.cpp /usr/include/stdc-predef.h \
+ /usr/include/c++/11/cstdio \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -38,7 +38,7 @@ CMakeFiles/isp_info.dir/apps/isp_info.cpp.o: \
  /usr/include/c++/11/new /usr/include/c++/11/bits/move.h \
  /usr/include/c++/11/type_traits \
  /usr/include/c++/11/bits/nested_exception.h \
- /home/lchin/ISP_ws/ISP_Raw_Course/common/include/isp/cli.h \
+ /home/lchin/ISP_Raw_Course/common/include/isp/cli.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
@@ -154,5 +154,5 @@ CMakeFiles/isp_info.dir/apps/isp_info.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/lchin/ISP_ws/ISP_Raw_Course/common/include/isp/image.h \
+ /home/lchin/ISP_Raw_Course/common/include/isp/image.h \
  /usr/include/c++/11/cstddef

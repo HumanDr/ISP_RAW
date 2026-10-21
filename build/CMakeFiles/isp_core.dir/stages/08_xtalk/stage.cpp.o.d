@@ -1,5 +1,5 @@
 CMakeFiles/isp_core.dir/stages/08_xtalk/stage.cpp.o: \
- /home/lchin/ISP_ws/ISP_Raw_Course/stages/08_xtalk/stage.cpp \
+ /home/lchin/ISP_Raw_Course/stages/08_xtalk/stage.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/algorithm \
  /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -158,6 +158,6 @@ CMakeFiles/isp_core.dir/stages/08_xtalk/stage.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/lchin/ISP_ws/ISP_Raw_Course/common/include/isp/stages.h \
- /home/lchin/ISP_ws/ISP_Raw_Course/common/include/isp/image.h \
+ /home/lchin/ISP_Raw_Course/common/include/isp/stages.h \
+ /home/lchin/ISP_Raw_Course/common/include/isp/image.h \
  /usr/include/c++/11/cstddef

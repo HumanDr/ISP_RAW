@@ -1,5 +1,5 @@
 CMakeFiles/isp_core.dir/stages/05_awb/stage.cpp.o: \
- /home/lchin/ISP_ws/ISP_Raw_Course/stages/05_awb/stage.cpp \
+ /home/lchin/ISP_Raw_Course/stages/05_awb/stage.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/algorithm \
  /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -113,7 +113,7 @@ CMakeFiles/isp_core.dir/stages/05_awb/stage.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
- /home/lchin/ISP_ws/ISP_Raw_Course/common/include/isp/stages.h \
+ /home/lchin/ISP_Raw_Course/common/include/isp/stages.h \
  /usr/include/c++/11/string /usr/include/c++/11/bits/stringfwd.h \
  /usr/include/c++/11/bits/char_traits.h \
  /usr/include/c++/11/bits/postypes.h /usr/include/c++/11/cwchar \
@@ -155,5 +155,5 @@ CMakeFiles/isp_core.dir/stages/05_awb/stage.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/lchin/ISP_ws/ISP_Raw_Course/common/include/isp/image.h \
+ /home/lchin/ISP_Raw_Course/common/include/isp/image.h \
  /usr/include/c++/11/cstddef

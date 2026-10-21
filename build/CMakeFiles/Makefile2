@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/lchin/ISP_ws/ISP_Raw_Course
+CMAKE_SOURCE_DIR = /home/lchin/ISP_Raw_Course
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/lchin/ISP_ws/ISP_Raw_Course/build
+CMAKE_BINARY_DIR = /home/lchin/ISP_Raw_Course/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -129,14 +129,14 @@ clean: CMakeFiles/isp_ae_af.dir/clean
 CMakeFiles/isp_core.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_core.dir/build.make CMakeFiles/isp_core.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_core.dir/build.make CMakeFiles/isp_core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68 "Built target isp_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68 "Built target isp_core"
 .PHONY : CMakeFiles/isp_core.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 26
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 26
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_core.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_core.dir/rule
 
 # Convenience name for target.
@@ -155,14 +155,14 @@ CMakeFiles/isp_core.dir/clean:
 CMakeFiles/isp_00_raw_load.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_00_raw_load.dir/build.make CMakeFiles/isp_00_raw_load.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_00_raw_load.dir/build.make CMakeFiles/isp_00_raw_load.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=1,2 "Built target isp_00_raw_load"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=1,2 "Built target isp_00_raw_load"
 .PHONY : CMakeFiles/isp_00_raw_load.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_00_raw_load.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_00_raw_load.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_00_raw_load.dir/rule
 
 # Convenience name for target.
@@ -181,14 +181,14 @@ CMakeFiles/isp_00_raw_load.dir/clean:
 CMakeFiles/isp_01_blc.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_01_blc.dir/build.make CMakeFiles/isp_01_blc.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_01_blc.dir/build.make CMakeFiles/isp_01_blc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=3,4 "Built target isp_01_blc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=3,4 "Built target isp_01_blc"
 .PHONY : CMakeFiles/isp_01_blc.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_01_blc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_01_blc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_01_blc.dir/rule
 
 # Convenience name for target.
@@ -207,14 +207,14 @@ CMakeFiles/isp_01_blc.dir/clean:
 CMakeFiles/isp_02_lsc.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_02_lsc.dir/build.make CMakeFiles/isp_02_lsc.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_02_lsc.dir/build.make CMakeFiles/isp_02_lsc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=5,6 "Built target isp_02_lsc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=5,6 "Built target isp_02_lsc"
 .PHONY : CMakeFiles/isp_02_lsc.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_02_lsc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_02_lsc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_02_lsc.dir/rule
 
 # Convenience name for target.
@@ -233,14 +233,14 @@ CMakeFiles/isp_02_lsc.dir/clean:
 CMakeFiles/isp_03_dpc.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_03_dpc.dir/build.make CMakeFiles/isp_03_dpc.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_03_dpc.dir/build.make CMakeFiles/isp_03_dpc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=7,8 "Built target isp_03_dpc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=7,8 "Built target isp_03_dpc"
 .PHONY : CMakeFiles/isp_03_dpc.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_03_dpc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_03_dpc.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_03_dpc.dir/rule
 
 # Convenience name for target.
@@ -259,14 +259,14 @@ CMakeFiles/isp_03_dpc.dir/clean:
 CMakeFiles/isp_04_nr_raw.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_04_nr_raw.dir/build.make CMakeFiles/isp_04_nr_raw.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_04_nr_raw.dir/build.make CMakeFiles/isp_04_nr_raw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=9,10 "Built target isp_04_nr_raw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=9,10 "Built target isp_04_nr_raw"
 .PHONY : CMakeFiles/isp_04_nr_raw.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_04_nr_raw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_04_nr_raw.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_04_nr_raw.dir/rule
 
 # Convenience name for target.
@@ -285,14 +285,14 @@ CMakeFiles/isp_04_nr_raw.dir/clean:
 CMakeFiles/isp_05_awb.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_05_awb.dir/build.make CMakeFiles/isp_05_awb.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_05_awb.dir/build.make CMakeFiles/isp_05_awb.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=11,12 "Built target isp_05_awb"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=11,12 "Built target isp_05_awb"
 .PHONY : CMakeFiles/isp_05_awb.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_05_awb.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_05_awb.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_05_awb.dir/rule
 
 # Convenience name for target.
@@ -311,14 +311,14 @@ CMakeFiles/isp_05_awb.dir/clean:
 CMakeFiles/isp_06_demosaic.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_06_demosaic.dir/build.make CMakeFiles/isp_06_demosaic.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_06_demosaic.dir/build.make CMakeFiles/isp_06_demosaic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=13,14 "Built target isp_06_demosaic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=13,14 "Built target isp_06_demosaic"
 .PHONY : CMakeFiles/isp_06_demosaic.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_06_demosaic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_06_demosaic.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_06_demosaic.dir/rule
 
 # Convenience name for target.
@@ -337,14 +337,14 @@ CMakeFiles/isp_06_demosaic.dir/clean:
 CMakeFiles/isp_07_nr_color.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_07_nr_color.dir/build.make CMakeFiles/isp_07_nr_color.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_07_nr_color.dir/build.make CMakeFiles/isp_07_nr_color.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=15,16 "Built target isp_07_nr_color"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=15,16 "Built target isp_07_nr_color"
 .PHONY : CMakeFiles/isp_07_nr_color.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_07_nr_color.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_07_nr_color.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_07_nr_color.dir/rule
 
 # Convenience name for target.
@@ -363,14 +363,14 @@ CMakeFiles/isp_07_nr_color.dir/clean:
 CMakeFiles/isp_08_xtalk.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_08_xtalk.dir/build.make CMakeFiles/isp_08_xtalk.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_08_xtalk.dir/build.make CMakeFiles/isp_08_xtalk.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=17,18 "Built target isp_08_xtalk"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=17,18 "Built target isp_08_xtalk"
 .PHONY : CMakeFiles/isp_08_xtalk.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_08_xtalk.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_08_xtalk.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_08_xtalk.dir/rule
 
 # Convenience name for target.
@@ -389,14 +389,14 @@ CMakeFiles/isp_08_xtalk.dir/clean:
 CMakeFiles/isp_09_color_correction.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_09_color_correction.dir/build.make CMakeFiles/isp_09_color_correction.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_09_color_correction.dir/build.make CMakeFiles/isp_09_color_correction.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=19,20 "Built target isp_09_color_correction"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=19,20 "Built target isp_09_color_correction"
 .PHONY : CMakeFiles/isp_09_color_correction.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_09_color_correction.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_09_color_correction.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_09_color_correction.dir/rule
 
 # Convenience name for target.
@@ -415,14 +415,14 @@ CMakeFiles/isp_09_color_correction.dir/clean:
 CMakeFiles/isp_10_hdr_wdr.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_10_hdr_wdr.dir/build.make CMakeFiles/isp_10_hdr_wdr.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_10_hdr_wdr.dir/build.make CMakeFiles/isp_10_hdr_wdr.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=21,22 "Built target isp_10_hdr_wdr"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=21,22 "Built target isp_10_hdr_wdr"
 .PHONY : CMakeFiles/isp_10_hdr_wdr.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_10_hdr_wdr.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_10_hdr_wdr.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_10_hdr_wdr.dir/rule
 
 # Convenience name for target.
@@ -441,14 +441,14 @@ CMakeFiles/isp_10_hdr_wdr.dir/clean:
 CMakeFiles/isp_11_gamma.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_11_gamma.dir/build.make CMakeFiles/isp_11_gamma.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_11_gamma.dir/build.make CMakeFiles/isp_11_gamma.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=23,24 "Built target isp_11_gamma"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=23,24 "Built target isp_11_gamma"
 .PHONY : CMakeFiles/isp_11_gamma.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_11_gamma.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_11_gamma.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_11_gamma.dir/rule
 
 # Convenience name for target.
@@ -467,14 +467,14 @@ CMakeFiles/isp_11_gamma.dir/clean:
 CMakeFiles/isp_12_color_space.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_12_color_space.dir/build.make CMakeFiles/isp_12_color_space.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_12_color_space.dir/build.make CMakeFiles/isp_12_color_space.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=25,26 "Built target isp_12_color_space"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=25,26 "Built target isp_12_color_space"
 .PHONY : CMakeFiles/isp_12_color_space.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_12_color_space.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_12_color_space.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_12_color_space.dir/rule
 
 # Convenience name for target.
@@ -493,14 +493,14 @@ CMakeFiles/isp_12_color_space.dir/clean:
 CMakeFiles/isp_13_nr_luma.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_13_nr_luma.dir/build.make CMakeFiles/isp_13_nr_luma.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_13_nr_luma.dir/build.make CMakeFiles/isp_13_nr_luma.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=27,28 "Built target isp_13_nr_luma"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=27,28 "Built target isp_13_nr_luma"
 .PHONY : CMakeFiles/isp_13_nr_luma.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_13_nr_luma.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_13_nr_luma.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_13_nr_luma.dir/rule
 
 # Convenience name for target.
@@ -519,14 +519,14 @@ CMakeFiles/isp_13_nr_luma.dir/clean:
 CMakeFiles/isp_14_edge_enhance.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_14_edge_enhance.dir/build.make CMakeFiles/isp_14_edge_enhance.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_14_edge_enhance.dir/build.make CMakeFiles/isp_14_edge_enhance.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=29,30 "Built target isp_14_edge_enhance"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=29,30 "Built target isp_14_edge_enhance"
 .PHONY : CMakeFiles/isp_14_edge_enhance.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_14_edge_enhance.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_14_edge_enhance.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_14_edge_enhance.dir/rule
 
 # Convenience name for target.
@@ -545,14 +545,14 @@ CMakeFiles/isp_14_edge_enhance.dir/clean:
 CMakeFiles/isp_15_contrast_brightness.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_15_contrast_brightness.dir/build.make CMakeFiles/isp_15_contrast_brightness.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_15_contrast_brightness.dir/build.make CMakeFiles/isp_15_contrast_brightness.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=31,32 "Built target isp_15_contrast_brightness"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=31,32 "Built target isp_15_contrast_brightness"
 .PHONY : CMakeFiles/isp_15_contrast_brightness.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_15_contrast_brightness.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_15_contrast_brightness.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_15_contrast_brightness.dir/rule
 
 # Convenience name for target.
@@ -571,14 +571,14 @@ CMakeFiles/isp_15_contrast_brightness.dir/clean:
 CMakeFiles/isp_16_nr_chroma.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_16_nr_chroma.dir/build.make CMakeFiles/isp_16_nr_chroma.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_16_nr_chroma.dir/build.make CMakeFiles/isp_16_nr_chroma.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=33,34 "Built target isp_16_nr_chroma"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=33,34 "Built target isp_16_nr_chroma"
 .PHONY : CMakeFiles/isp_16_nr_chroma.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_16_nr_chroma.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_16_nr_chroma.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_16_nr_chroma.dir/rule
 
 # Convenience name for target.
@@ -597,14 +597,14 @@ CMakeFiles/isp_16_nr_chroma.dir/clean:
 CMakeFiles/isp_17_hue_saturation.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_17_hue_saturation.dir/build.make CMakeFiles/isp_17_hue_saturation.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_17_hue_saturation.dir/build.make CMakeFiles/isp_17_hue_saturation.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=35,36 "Built target isp_17_hue_saturation"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=35,36 "Built target isp_17_hue_saturation"
 .PHONY : CMakeFiles/isp_17_hue_saturation.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_17_hue_saturation.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_17_hue_saturation.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_17_hue_saturation.dir/rule
 
 # Convenience name for target.
@@ -623,14 +623,14 @@ CMakeFiles/isp_17_hue_saturation.dir/clean:
 CMakeFiles/isp_18_scale_crop.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_18_scale_crop.dir/build.make CMakeFiles/isp_18_scale_crop.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_18_scale_crop.dir/build.make CMakeFiles/isp_18_scale_crop.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=37,38 "Built target isp_18_scale_crop"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=37,38 "Built target isp_18_scale_crop"
 .PHONY : CMakeFiles/isp_18_scale_crop.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_18_scale_crop.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_18_scale_crop.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_18_scale_crop.dir/rule
 
 # Convenience name for target.
@@ -649,14 +649,14 @@ CMakeFiles/isp_18_scale_crop.dir/clean:
 CMakeFiles/isp_19_encoder.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_19_encoder.dir/build.make CMakeFiles/isp_19_encoder.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_19_encoder.dir/build.make CMakeFiles/isp_19_encoder.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=39,40 "Built target isp_19_encoder"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=39,40 "Built target isp_19_encoder"
 .PHONY : CMakeFiles/isp_19_encoder.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_19_encoder.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_19_encoder.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_19_encoder.dir/rule
 
 # Convenience name for target.
@@ -675,14 +675,14 @@ CMakeFiles/isp_19_encoder.dir/clean:
 CMakeFiles/isp_pipeline.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_pipeline.dir/build.make CMakeFiles/isp_pipeline.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_pipeline.dir/build.make CMakeFiles/isp_pipeline.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=73,74 "Built target isp_pipeline"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=73,74 "Built target isp_pipeline"
 .PHONY : CMakeFiles/isp_pipeline.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_pipeline.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_pipeline.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_pipeline.dir/rule
 
 # Convenience name for target.
@@ -701,14 +701,14 @@ CMakeFiles/isp_pipeline.dir/clean:
 CMakeFiles/isp_dump.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_dump.dir/build.make CMakeFiles/isp_dump.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_dump.dir/build.make CMakeFiles/isp_dump.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=69,70 "Built target isp_dump"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=69,70 "Built target isp_dump"
 .PHONY : CMakeFiles/isp_dump.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_dump.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_dump.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_dump.dir/rule
 
 # Convenience name for target.
@@ -727,14 +727,14 @@ CMakeFiles/isp_dump.dir/clean:
 CMakeFiles/isp_info.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_info.dir/build.make CMakeFiles/isp_info.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_info.dir/build.make CMakeFiles/isp_info.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=71,72 "Built target isp_info"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=71,72 "Built target isp_info"
 .PHONY : CMakeFiles/isp_info.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_info.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_info.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_info.dir/rule
 
 # Convenience name for target.
@@ -753,14 +753,14 @@ CMakeFiles/isp_info.dir/clean:
 CMakeFiles/isp_ae_af.dir/all: CMakeFiles/isp_core.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_ae_af.dir/build.make CMakeFiles/isp_ae_af.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/isp_ae_af.dir/build.make CMakeFiles/isp_ae_af.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles --progress-num=41,42 "Built target isp_ae_af"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/lchin/ISP_Raw_Course/build/CMakeFiles --progress-num=41,42 "Built target isp_ae_af"
 .PHONY : CMakeFiles/isp_ae_af.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/isp_ae_af.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 28
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 28
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/isp_ae_af.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_ws/ISP_Raw_Course/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/lchin/ISP_Raw_Course/build/CMakeFiles 0
 .PHONY : CMakeFiles/isp_ae_af.dir/rule
 
 # Convenience name for target.

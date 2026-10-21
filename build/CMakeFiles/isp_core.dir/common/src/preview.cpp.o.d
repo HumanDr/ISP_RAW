@@ -1,7 +1,7 @@
 CMakeFiles/isp_core.dir/common/src/preview.cpp.o: \
- /home/lchin/ISP_ws/ISP_Raw_Course/common/src/preview.cpp \
+ /home/lchin/ISP_Raw_Course/common/src/preview.cpp \
  /usr/include/stdc-predef.h \
- /home/lchin/ISP_ws/ISP_Raw_Course/common/include/isp/preview.h \
+ /home/lchin/ISP_Raw_Course/common/include/isp/preview.h \
  /usr/include/c++/11/cstdint \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -53,7 +53,7 @@ CMakeFiles/isp_core.dir/common/src/preview.cpp.o: \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/range_access.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/lchin/ISP_ws/ISP_Raw_Course/common/include/isp/image.h \
+ /home/lchin/ISP_Raw_Course/common/include/isp/image.h \
  /usr/include/c++/11/cstddef \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h \
  /usr/include/c++/11/string /usr/include/c++/11/bits/stringfwd.h \

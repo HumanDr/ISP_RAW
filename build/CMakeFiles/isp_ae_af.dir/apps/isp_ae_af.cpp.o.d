@@ -1,7 +1,6 @@
 CMakeFiles/isp_ae_af.dir/apps/isp_ae_af.cpp.o: \
- /home/lchin/ISP_ws/ISP_Raw_Course/apps/isp_ae_af.cpp \
- /usr/include/stdc-predef.h /usr/include/c++/11/algorithm \
- /usr/include/c++/11/utility \
+ /home/lchin/ISP_Raw_Course/apps/isp_ae_af.cpp /usr/include/stdc-predef.h \
+ /usr/include/c++/11/algorithm /usr/include/c++/11/utility \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -138,7 +137,7 @@ CMakeFiles/isp_ae_af.dir/apps/isp_ae_af.cpp.o: \
  /usr/include/c++/11/exception /usr/include/c++/11/bits/exception_ptr.h \
  /usr/include/c++/11/bits/cxxabi_init_exception.h \
  /usr/include/c++/11/bits/nested_exception.h \
- /home/lchin/ISP_ws/ISP_Raw_Course/common/include/isp/cli.h \
+ /home/lchin/ISP_Raw_Course/common/include/isp/cli.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
@@ -186,6 +185,6 @@ CMakeFiles/isp_ae_af.dir/apps/isp_ae_af.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
  /usr/include/c++/11/bits/charconv.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/lchin/ISP_ws/ISP_Raw_Course/common/include/isp/image.h \
+ /home/lchin/ISP_Raw_Course/common/include/isp/image.h \
  /usr/include/c++/11/cstddef \
- /home/lchin/ISP_ws/ISP_Raw_Course/common/include/isp/raw.h
+ /home/lchin/ISP_Raw_Course/common/include/isp/raw.h

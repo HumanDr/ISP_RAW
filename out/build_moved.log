@@ -1,0 +1,136 @@
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lchin/ISP_Raw_Course/build
+[  2%] Building CXX object CMakeFiles/isp_core.dir/common/src/preview.cpp.o
+[  2%] Building CXX object CMakeFiles/isp_core.dir/common/src/raw.cpp.o
+[  6%] Building CXX object CMakeFiles/isp_core.dir/stages/00_raw_load/stage.cpp.o
+[  6%] Building CXX object CMakeFiles/isp_core.dir/common/src/image.cpp.o
+[  6%] Building CXX object CMakeFiles/isp_core.dir/common/src/io.cpp.o
+[  8%] Building CXX object CMakeFiles/isp_core.dir/stages/01_blc/stage.cpp.o
+[  9%] Building CXX object CMakeFiles/isp_core.dir/common/src/cli.cpp.o
+[ 13%] Building CXX object CMakeFiles/isp_core.dir/stages/04_nr_raw/stage.cpp.o
+[ 13%] Building CXX object CMakeFiles/isp_core.dir/stages/02_lsc/stage.cpp.o
+[ 13%] Building CXX object CMakeFiles/isp_core.dir/stages/05_awb/stage.cpp.o
+[ 16%] Building CXX object CMakeFiles/isp_core.dir/stages/06_demosaic/stage.cpp.o
+[ 16%] Building CXX object CMakeFiles/isp_core.dir/stages/07_nr_color/stage.cpp.o
+[ 17%] Building CXX object CMakeFiles/isp_core.dir/stages/08_xtalk/stage.cpp.o
+[ 18%] Building CXX object CMakeFiles/isp_core.dir/stages/03_dpc/stage.cpp.o
+[ 20%] Building CXX object CMakeFiles/isp_core.dir/stages/09_color_correction/stage.cpp.o
+[ 21%] Building CXX object CMakeFiles/isp_core.dir/stages/10_hdr_wdr/stage.cpp.o
+[ 22%] Building CXX object CMakeFiles/isp_core.dir/stages/11_gamma/stage.cpp.o
+[ 25%] Building CXX object CMakeFiles/isp_core.dir/stages/13_nr_luma/stage.cpp.o
+[ 25%] Building CXX object CMakeFiles/isp_core.dir/stages/12_color_space/stage.cpp.o
+[ 27%] Building CXX object CMakeFiles/isp_core.dir/stages/17_hue_saturation/stage.cpp.o
+[ 28%] Building CXX object CMakeFiles/isp_core.dir/stages/14_edge_enhance/stage.cpp.o
+[ 29%] Building CXX object CMakeFiles/isp_core.dir/stages/18_scale_crop/stage.cpp.o
+[ 31%] Building CXX object CMakeFiles/isp_core.dir/stages/16_nr_chroma/stage.cpp.o
+[ 32%] Building CXX object CMakeFiles/isp_core.dir/stages/15_contrast_brightness/stage.cpp.o
+[ 33%] Building CXX object CMakeFiles/isp_core.dir/stages/19_encoder/stage.cpp.o
+[ 35%] Linking CXX static library libisp_core.a
+[ 35%] Built target isp_core
+[ 39%] Building CXX object CMakeFiles/isp_04_nr_raw.dir/stages/04_nr_raw/main.cpp.o
+[ 39%] Building CXX object CMakeFiles/isp_02_lsc.dir/stages/02_lsc/main.cpp.o
+[ 39%] Building CXX object CMakeFiles/isp_00_raw_load.dir/stages/00_raw_load/main.cpp.o
+[ 40%] Building CXX object CMakeFiles/isp_01_blc.dir/stages/01_blc/main.cpp.o
+[ 41%] Building CXX object CMakeFiles/isp_03_dpc.dir/stages/03_dpc/main.cpp.o
+[ 43%] Building CXX object CMakeFiles/isp_08_xtalk.dir/stages/08_xtalk/main.cpp.o
+[ 45%] Building CXX object CMakeFiles/isp_06_demosaic.dir/stages/06_demosaic/main.cpp.o
+[ 45%] Building CXX object CMakeFiles/isp_05_awb.dir/stages/05_awb/main.cpp.o
+[ 47%] Building CXX object CMakeFiles/isp_07_nr_color.dir/stages/07_nr_color/main.cpp.o
+[ 50%] Building CXX object CMakeFiles/isp_10_hdr_wdr.dir/stages/10_hdr_wdr/main.cpp.o
+[ 50%] Building CXX object CMakeFiles/isp_11_gamma.dir/stages/11_gamma/main.cpp.o
+[ 51%] Building CXX object CMakeFiles/isp_09_color_correction.dir/stages/09_color_correction/main.cpp.o
+[ 52%] Building CXX object CMakeFiles/isp_12_color_space.dir/stages/12_color_space/main.cpp.o
+[ 54%] Building CXX object CMakeFiles/isp_15_contrast_brightness.dir/stages/15_contrast_brightness/main.cpp.o
+[ 56%] Building CXX object CMakeFiles/isp_dump.dir/apps/isp_dump.cpp.o
+[ 56%] Building CXX object CMakeFiles/isp_14_edge_enhance.dir/stages/14_edge_enhance/main.cpp.o
+[ 58%] Building CXX object CMakeFiles/isp_13_nr_luma.dir/stages/13_nr_luma/main.cpp.o
+[ 59%] Building CXX object CMakeFiles/isp_17_hue_saturation.dir/stages/17_hue_saturation/main.cpp.o
+[ 60%] Building CXX object CMakeFiles/isp_ae_af.dir/apps/isp_ae_af.cpp.o
+[ 62%] Building CXX object CMakeFiles/isp_18_scale_crop.dir/stages/18_scale_crop/main.cpp.o
+[ 64%] Building CXX object CMakeFiles/isp_16_nr_chroma.dir/stages/16_nr_chroma/main.cpp.o
+[ 64%] Building CXX object CMakeFiles/isp_pipeline.dir/apps/isp_pipeline.cpp.o
+[ 66%] Building CXX object CMakeFiles/isp_19_encoder.dir/stages/19_encoder/main.cpp.o
+[ 67%] Building CXX object CMakeFiles/isp_info.dir/apps/isp_info.cpp.o
+[ 71%] Linking CXX executable isp_13_nr_luma
+[ 71%] Linking CXX executable isp_16_nr_chroma
+[ 71%] Linking CXX executable isp_10_hdr_wdr
+[ 72%] Linking CXX executable isp_04_nr_raw
+[ 74%] Linking CXX executable isp_08_xtalk
+[ 75%] Linking CXX executable isp_info
+[ 77%] Linking CXX executable isp_06_demosaic
+[ 78%] Linking CXX executable isp_12_color_space
+[ 82%] Linking CXX executable isp_15_contrast_brightness
+[ 82%] Linking CXX executable isp_07_nr_color
+[ 82%] Linking CXX executable isp_14_edge_enhance
+[ 83%] Linking CXX executable isp_03_dpc
+[ 83%] Built target isp_10_hdr_wdr
+[ 86%] Linking CXX executable isp_19_encoder
+[ 86%] Linking CXX executable isp_02_lsc
+[ 87%] Linking CXX executable isp_01_blc
+[ 89%] Linking CXX executable isp_09_color_correction
+[ 90%] Linking CXX executable isp_17_hue_saturation
+[ 93%] Linking CXX executable isp_05_awb
+[ 93%] Linking CXX executable isp_11_gamma
+[ 93%] Built target isp_16_nr_chroma
+[ 93%] Built target isp_04_nr_raw
+[ 94%] Linking CXX executable isp_dump
+[ 95%] Linking CXX executable isp_18_scale_crop
+[ 97%] Linking CXX executable isp_00_raw_load
+[ 97%] Built target isp_13_nr_luma
+[ 97%] Built target isp_info
+[ 97%] Built target isp_08_xtalk
+[ 97%] Built target isp_06_demosaic
+[ 97%] Built target isp_09_color_correction
+[ 97%] Built target isp_03_dpc
+[ 97%] Built target isp_14_edge_enhance
+[ 97%] Built target isp_15_contrast_brightness
+[ 97%] Built target isp_12_color_space
+[ 97%] Built target isp_01_blc
+[ 97%] Built target isp_19_encoder
+[ 97%] Built target isp_17_hue_saturation
+[ 97%] Built target isp_05_awb
+[ 97%] Built target isp_07_nr_color
+[ 97%] Built target isp_11_gamma
+[ 97%] Built target isp_18_scale_crop
+[ 97%] Built target isp_00_raw_load
+[ 97%] Built target isp_02_lsc
+[ 97%] Built target isp_dump
+[ 98%] Linking CXX executable isp_ae_af
+[ 98%] Built target isp_ae_af
+[100%] Linking CXX executable isp_pipeline
+[100%] Built target isp_pipeline
+
+构建完成：
+  build/isp_00_raw_load
+  build/isp_01_blc
+  build/isp_02_lsc
+  build/isp_03_dpc
+  build/isp_04_nr_raw
+  build/isp_05_awb
+  build/isp_06_demosaic
+  build/isp_07_nr_color
+  build/isp_08_xtalk
+  build/isp_09_color_correction
+  build/isp_10_hdr_wdr
+  build/isp_11_gamma
+  build/isp_12_color_space
+  build/isp_13_nr_luma
+  build/isp_14_edge_enhance
+  build/isp_15_contrast_brightness
+  build/isp_16_nr_chroma
+  build/isp_17_hue_saturation
+  build/isp_18_scale_crop
+  build/isp_19_encoder
+  build/isp_ae_af
+  build/isp_dump
+  build/isp_info
+  build/isp_pipeline

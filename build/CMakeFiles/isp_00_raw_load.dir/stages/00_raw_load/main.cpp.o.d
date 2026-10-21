@@ -1,5 +1,5 @@
 CMakeFiles/isp_00_raw_load.dir/stages/00_raw_load/main.cpp.o: \
- /home/lchin/ISP_ws/ISP_Raw_Course/stages/00_raw_load/main.cpp \
+ /home/lchin/ISP_Raw_Course/stages/00_raw_load/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/cstdio \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -38,7 +38,7 @@ CMakeFiles/isp_00_raw_load.dir/stages/00_raw_load/main.cpp.o: \
  /usr/include/c++/11/new /usr/include/c++/11/bits/move.h \
  /usr/include/c++/11/type_traits \
  /usr/include/c++/11/bits/nested_exception.h \
- /home/lchin/ISP_ws/ISP_Raw_Course/common/include/isp/cli.h \
+ /home/lchin/ISP_Raw_Course/common/include/isp/cli.h \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
  /usr/include/c++/11/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
@@ -154,7 +154,7 @@ CMakeFiles/isp_00_raw_load.dir/stages/00_raw_load/main.cpp.o: \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc \
- /home/lchin/ISP_ws/ISP_Raw_Course/common/include/isp/image.h \
+ /home/lchin/ISP_Raw_Course/common/include/isp/image.h \
  /usr/include/c++/11/cstddef \
- /home/lchin/ISP_ws/ISP_Raw_Course/common/include/isp/raw.h \
- /home/lchin/ISP_ws/ISP_Raw_Course/common/include/isp/stages.h
+ /home/lchin/ISP_Raw_Course/common/include/isp/raw.h \
+ /home/lchin/ISP_Raw_Course/common/include/isp/stages.h

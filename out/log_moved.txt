@@ -1,0 +1,131 @@
+============================================================
+ RAW ISP 教学流水线（.raw -> PNG）
+   RAW : data/sample.raw
+   META: data/sample.meta
+   OUT : out/final.png
+============================================================
+
+--- 00_raw_load ---
+[00] 5760x3840 c=1 u16 RGGB | min 2040.0 p1 2089.0 p50 2843.0 p99 6102.0 max 15464.0 mean 3129.4 clip 0.01% | 
+        note: raw: 5760x3840 RGGB black 2047
+
+--- 01_blc ---
+[01 BLC] black 2047/2047/2047/2048 white 15000 -> [0,1]
+[01] 5760x3840 c=1 f32 RGGB | min 0.0 p1 0.0 p50 0.1 p99 0.3 max 1.0 mean 0.1 clip 0.02% | 
+        note: BLC: black removed, normalized to [0,1]
+
+--- 02_lsc ---
+[02 LSC] strength 0.70  corner R/G/B = 2.05/2.05/2.05
+[02] 5760x3840 c=1 f32 RGGB | min 0.0 p1 0.0 p50 0.1 p99 0.4 max 1.8 mean 0.1 clip 0.02% | 
+        note: LSC: radial gain
+
+--- 03_dpc ---
+[03 BPC/DPC] threshold 0.050  fixed 2534 / 22080016 (0.0115%)
+[03] 5760x3840 c=1 f32 RGGB | min 0.0 p1 0.0 p50 0.1 p99 0.4 max 1.8 mean 0.1 clip 0.02% | 
+        note: BPC/DPC: median of same-color neighbors
+
+--- 04_nr_raw ---
+[04 NR RAW] noise sigma≈0.0019  range sigma=0.0060
+[04] 5760x3840 c=1 f32 RGGB | min 0.0 p1 0.0 p50 0.1 p99 0.4 max 1.8 mean 0.1 clip 0.01% | 
+        note: NR RAW: bilateral
+
+--- 05_awb ---
+[05 AWB] gray-world  strength 0.50  gains R/G/B = 1.427/1/2.584
+[05] 5760x3840 c=1 f32 RGGB | min 0.0 p1 0.0 p50 0.1 p99 0.5 max 2.6 mean 0.1 clip 0.02% | 
+        note: AWB: gray world blended with camera reference
+
+--- 06_demosaic ---
+[06 Demosaic] MHC -> 3 channels
+[06] 5760x3840 c=3 f32 NONE | c0 min 0.0 p1 0.0 p50 0.1 p99 0.5 max 2.5 mean 0.1 clip 0.01% | c1 min 0.0 p1 0.0 p50 0.1 p99 0.4 max 1.9 mean 0.1 clip 0.01% | c2 min 0.0 p1 0.0 p50 0.1 p99 0.4 max 2.8 mean 0.1 clip 0.01% | 
+        note: Demosaic: MHC
+
+--- 07_nr_color ---
+[07 NR Color] chroma median strength 0.40
+[07] 5760x3840 c=3 f32 NONE | c0 min 0.0 p1 0.0 p50 0.1 p99 0.5 max 2.5 mean 0.1 clip 0.01% | c1 min 0.0 p1 0.0 p50 0.1 p99 0.4 max 1.9 mean 0.1 clip 0.01% | c2 min 0.0 p1 0.0 p50 0.1 p99 0.4 max 2.7 mean 0.1 clip 0.01% | 
+        note: NR Color: chroma median
+
+--- 08_xtalk ---
+[08 X-talking] strength 0.04
+[08] 5760x3840 c=3 f32 NONE | c0 min 0.0 p1 0.0 p50 0.1 p99 0.6 max 2.5 mean 0.1 clip 0.01% | c1 min 0.0 p1 0.0 p50 0.1 p99 0.4 max 1.8 mean 0.1 clip 0.01% | c2 min 0.0 p1 0.0 p50 0.1 p99 0.3 max 2.8 mean 0.1 clip 0.01% | 
+        note: X-talking: color crosstalk correction
+
+--- 09_color_correction ---
+[09 Color Correction] camera RGB -> linear sRGB:
+      [ 2.0429 -1.1233  0.0804]
+      [-0.2970  1.6431 -0.3461]
+      [ 0.0100 -0.7474  1.7374]
+[09] 5760x3840 c=3 f32 NONE | c0 min 0.0 p1 0.0 p50 0.1 p99 0.7 max 3.4 mean 0.2 clip 0.03% | c1 min 0.0 p1 0.0 p50 0.1 p99 0.4 max 1.5 mean 0.1 clip 0.01% | c2 min 0.0 p1 0.0 p50 0.1 p99 0.3 max 3.5 mean 0.1 clip 0.09% | 
+        note: Color Correction: CCM -> linear sRGB
+
+--- 10_hdr_wdr ---
+[10 HDR/WDR] strength 0.40  max before 7.73 -> after 2.82
+[10] 5760x3840 c=3 f32 NONE | c0 min 0.0 p1 0.0 p50 0.1 p99 0.7 max 2.2 mean 0.2 clip 0.03% | c1 min 0.0 p1 0.0 p50 0.1 p99 0.4 max 1.4 mean 0.1 clip 0.01% | c2 min 0.0 p1 0.0 p50 0.1 p99 0.3 max 2.3 mean 0.1 clip 0.09% | 
+        note: HDR/WDR: highlight soft clip
+
+--- 11_gamma ---
+[11 Gamma] auto exposure p99.5=0.7536 scale=1.300 (0.38 EV)
+[11] 5760x3840 c=3 f32 NONE | c0 min 0.0 p1 0.0 p50 0.4 p99 1.0 max 1.0 mean 0.4 clip 0.40% | c1 min 0.0 p1 0.1 p50 0.4 p99 0.8 max 1.0 mean 0.4 clip 0.01% | c2 min 0.0 p1 0.1 p50 0.3 p99 0.6 max 1.0 mean 0.3 clip 0.10% | 
+        note: Gamma: exposure + sRGB transfer
+
+--- 12_color_space ---
+[12 Color Space] RGB -> YUV (BT.709 full range)
+[12] 5760x3840 c=3 f32 NONE | c0 min 0.0 p1 0.1 p50 0.4 p99 0.8 max 1.0 mean 0.4 clip 0.01% | c1 min -0.2 p1 -0.1 p50 -0.0 p99 0.0 max 0.3 mean -0.0 clip 92.07% | c2 min -0.1 p1 -0.0 p50 0.0 p99 0.1 max 0.2 mean 0.0 clip 6.06% | 
+        note: Color Space Convert: RGB -> YUV BT.709
+
+--- 13_nr_luma ---
+[13 NR Luma] sigma 0.0120
+[13] 5760x3840 c=3 f32 NONE | c0 min 0.0 p1 0.1 p50 0.4 p99 0.8 max 1.0 mean 0.4 clip 0.00% | c1 min -0.2 p1 -0.1 p50 -0.0 p99 0.0 max 0.3 mean -0.0 clip 92.07% | c2 min -0.1 p1 -0.0 p50 0.0 p99 0.1 max 0.2 mean 0.0 clip 6.06% | 
+        note: NR Luma: bilateral on Y
+
+--- 14_edge_enhance ---
+[14 Edge Enhance] amount 0.40
+[14] 5760x3840 c=3 f32 NONE | c0 min 0.0 p1 0.1 p50 0.4 p99 0.8 max 1.0 mean 0.4 clip 0.01% | c1 min -0.2 p1 -0.1 p50 -0.0 p99 0.0 max 0.3 mean -0.0 clip 92.07% | c2 min -0.1 p1 -0.0 p50 0.0 p99 0.1 max 0.2 mean 0.0 clip 6.06% | 
+        note: Edge Enhance: unsharp on Y
+
+--- 15_contrast_brightness ---
+[15 Contrast/Brightness] contrast 1.05 brightness +0.00
+[15] 5760x3840 c=3 f32 NONE | c0 min 0.0 p1 0.0 p50 0.4 p99 0.8 max 1.0 mean 0.4 clip 0.03% | c1 min -0.2 p1 -0.1 p50 -0.0 p99 0.0 max 0.3 mean -0.0 clip 92.07% | c2 min -0.1 p1 -0.0 p50 0.0 p99 0.1 max 0.2 mean 0.0 clip 6.06% | 
+        note: Contrast/Brightness on Y
+
+--- 16_nr_chroma ---
+[16 NR Chroma] strength 0.40
+[16] 5760x3840 c=3 f32 NONE | c0 min 0.0 p1 0.0 p50 0.4 p99 0.8 max 1.0 mean 0.4 clip 0.03% | c1 min -0.2 p1 -0.1 p50 -0.0 p99 0.0 max 0.3 mean -0.0 clip 92.08% | c2 min -0.1 p1 -0.0 p50 0.0 p99 0.1 max 0.2 mean 0.0 clip 6.07% | 
+        note: NR Chroma: median on U/V
+
+--- 17_hue_saturation ---
+[17 Hue/Saturation] hue +0.0 deg  saturation 1.08
+[17] 5760x3840 c=3 f32 NONE | c0 min 0.0 p1 0.0 p50 0.4 p99 0.8 max 1.0 mean 0.4 clip 0.03% | c1 min -0.2 p1 -0.1 p50 -0.0 p99 0.0 max 0.3 mean -0.0 clip 92.08% | c2 min -0.1 p1 -0.0 p50 0.0 p99 0.1 max 0.2 mean 0.0 clip 6.07% | 
+        note: Hue/Saturation
+
+--- 18_scale_crop ---
+[18 Scale & Crop] scale 1/2 + crop 16:9 -> 2880x1620
+[18] 2880x1620 c=3 f32 NONE | c0 min 0.0 p1 0.0 p50 0.4 p99 0.8 max 1.0 mean 0.4 clip 0.03% | c1 min -0.2 p1 -0.1 p50 -0.0 p99 0.0 max 0.5 mean -0.0 clip 90.95% | c2 min -0.0 p1 -0.0 p50 0.0 p99 0.1 max 0.4 mean 0.0 clip 7.07% | 
+        note: Scale & Crop: 2880x1620
+[19 Encoder] wrote out/final.png (2880x1620)
+
+============================================================
+   00_raw_load                  24.4 ms
+   01_blc                      106.9 ms
+   02_lsc                      136.8 ms
+   03_dpc                      552.6 ms
+   04_nr_raw                   375.6 ms
+   05_awb                       55.3 ms
+   06_demosaic                1290.8 ms
+   07_nr_color                3337.2 ms
+   08_xtalk                     26.6 ms
+   09_color_correction          26.4 ms
+   10_hdr_wdr                   56.4 ms
+   11_gamma                    315.9 ms
+   12_color_space               33.1 ms
+   13_nr_luma                  229.4 ms
+   14_edge_enhance             228.7 ms
+   15_contrast_brightness       24.1 ms
+   16_nr_chroma               3225.3 ms
+   17_hue_saturation            25.4 ms
+   18_scale_crop               197.0 ms
+   19_encoder                 1357.1 ms
+   TOTAL                     11624.9 ms
+ 输出: out/final.png (2880x1620)
+============================================================
+
+输出: out/final.png
