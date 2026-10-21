@@ -1,0 +1,22 @@
+# CMake / 编译产物
+build/
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.exe
+
+# 运行产物（可重新生成）
+out/
+
+# Python / 视频生成环境
+.pylibs/
+__pycache__/
+*.pyc
+.lo_profile/
+
+# 编辑器
+.vscode/
+.idea/
+.DS_Store
