@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/isp_12_color_space.dir/stages/12_color_space/main.cpp.o -o isp_12_color_space  libisp_core.a /usr/lib/x86_64-linux-gnu/libpng.so /usr/lib/x86_64-linux-gnu/libz.so 

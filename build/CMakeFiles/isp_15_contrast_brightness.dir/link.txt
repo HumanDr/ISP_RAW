@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/isp_15_contrast_brightness.dir/stages/15_contrast_brightness/main.cpp.o -o isp_15_contrast_brightness  libisp_core.a /usr/lib/x86_64-linux-gnu/libpng.so /usr/lib/x86_64-linux-gnu/libz.so 
