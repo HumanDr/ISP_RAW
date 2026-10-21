@@ -200,7 +200,7 @@ python3 tools/make_script_doc.py
 产物：
 
 - `docs/ISP_Raw_5min.pptx` / `.pdf`：10 页；
-- `docs/ISP_Raw_5min.mp4`：1080p，约 5 分 13 秒；
+- `docs/ISP_Raw_5min.mp4`：1080p，约 5 分 27 秒；
 - `docs/subtitles/ISP_Raw_5min.srt`：外挂字幕；
 - `docs/PPT_讲解词.md`：逐句讲稿 + 时间轴。
 

@@ -280,8 +280,8 @@ def build():
     d.rect(s, 0, 0, 13.333, 7.5, LIGHT)
     d.eyebrow(s, "05 / RGB 域")
     d.title(s, "颜色、动态范围、Gamma")
-    d.image(s, IMG / "stage_09.png", 0.75, 1.55, 6.2, 3.1)
-    d.text(s, 0.75, 4.78, 6.2, 0.28, "CCM 后：linear sRGB", size=10.5, color=MUTED, align=3)
+    d.image(s, IMG / "compare_09.png", 0.75, 1.5, 6.2, 2.85)
+    d.text(s, 0.75, 4.5, 6.2, 0.28, "CCM 前（左） vs CCM 后（右）", size=10.5, color=MUTED, align=3)
     rows = [("07", "NR Color", "色度降噪"), ("08", "X-talking", "串扰校正"),
             ("09", "Color Corr.", "相机→sRGB"), ("10", "HDR/WDR", "高光压缩"),
             ("11", "Gamma", "曝光+sRGB"), ("12", "Color Space", "RGB→YUV")]
@@ -299,7 +299,7 @@ def build():
     d.rect(s, 0, 0, 13.333, 7.5, LIGHT)
     d.eyebrow(s, "06 / YUV 域")
     d.title(s, "最后修观感，再编码")
-    d.image(s, IMG / "stage_12.png", 0.75, 1.55, 6.2, 3.1)
+    d.image(s, IMG / "compare_12.png", 0.75, 1.5, 6.2, 2.85)
     d.text(s, 0.75, 4.78, 6.2, 0.28, "RGB→YUV 之后：Y/U/V 三通道", size=10.5,
            color=MUTED, align=3)
     rows = [("13", "NR Luma", "亮度降噪"), ("14", "Edge Enhance", "边缘增强"),

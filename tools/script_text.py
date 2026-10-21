@@ -28,10 +28,11 @@ TEXTS = [
     "RGB 域先做色度降噪，再做 X-talking 串扰校正，然后用 CCM 把相机 RGB 变到线性 sRGB。"
     "CCM 先把相机 RGB 变到 XYZ，再做 Bradford 色适应到 D65，最后乘 XYZ 到 sRGB 的矩阵。"
     "HDR/WDR 只压缩超过 1 的高光；Gamma 做自动曝光和 sRGB 编码；"
-    "最后 Color Space 把 RGB 变成 YUV。",
+    "左边是 CCM 前，右边是 CCM 后，白墙被拉回中性；最后 Color Space 把 RGB 变成 YUV。",
 
     "YUV 域利用人眼特性：Y 做小半径降噪和边缘增强，U/V 做更强的中值降噪；"
     "Y 保留细节，U/V 可以更激进地降噪；420 就是 U/V 各降一半分辨率，人眼几乎看不出来。"
+    "左边是 RGB，右边是 YUV；看起来接近，但后面只改 Y 和 U/V。"
     "再改对比度、色相和饱和度；最后缩放裁剪，编码成 PNG。"
     "如果加 --yuv，还会输出一份 YUV420，方便给编码器做实验。",
 

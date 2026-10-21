@@ -2,6 +2,10 @@
 
 ![pipeline](images/pipeline.png)
 
+一张图看 20 步的变化：
+
+![stage contact](images/stage_contact.png)
+
 本文按 B 站课程《【图像ISP基础】从黑白电平RAW到彩色照片，数字成像的魔法》
 的三域流程组织：
 
@@ -15,6 +19,8 @@ YUV 域：NR Luma → Edge Enhance → Contrast/Brightness → NR Chroma
 ---
 
 ## 1. 从传感器到 .raw
+
+![bayer](images/bayer_pattern.png)
 
 传感器每个像素只记录 R/G/B 中的一种，输出的是 Bayer 单通道数据。
 本工程把它存成**无文件头、16bit little-endian** 的 `.raw`：
@@ -68,6 +74,10 @@ v = (raw - black[cfa]) / (white - black[cfa])
 
 不减黑电平，后面乘白平衡增益会把偏置放大成暗部偏色。
 
+### 3.1.1 黑电平前后
+
+![blc](images/compare_01.png)
+
 ### 3.2 LSC（镜头阴影校正）
 
 镜头 cos⁴ 衰减导致四角变暗。工业上用 flat-field 标定：
@@ -105,6 +115,8 @@ gain_c = mean_G / mean_c
 
 ### 3.6 Demosaic（去马赛克）
 
+![demosaic before after](images/compare_06.png)
+
 Bayer 上每个像素只有一个颜色，另外两个靠邻居插值。
 双线性是邻居平均；Malvar-He-Cutler 用 5×5 卷积 + 梯度修正，本工程默认 MHC。
 
@@ -131,6 +143,8 @@ B' = -kR - kG + B
 再按行归一化，保证白点不变。`k` 越大，颜色越“分离”，但也越容易过饱和。
 
 ### 4.3 Color Correction（CCM）
+
+![ccm](images/compare_09.png)
 
 相机 RGB 不是 sRGB。先到 XYZ，再到 sRGB：
 
@@ -161,6 +175,8 @@ v ≤ 0.0031308 : 12.92v
 
 ### 4.6 Color Space（RGB → YUV）
 
+![rgb2yuv](images/compare_12.png)
+
 BT.709 full range：
 
 ```text
@@ -174,6 +190,10 @@ V = (R - Y) / 1.5748
 ---
 
 ## 5. YUV 域
+
+硬件里亮度/色度常常是两条并行分支：Y 走降噪/锐化/对比度，U/V 走降噪/色相饱和度，
+最后在 Scale & Crop 前汇合。本工程按顺序执行，因为两条分支的算子互相独立，
+结果等价；这样代码更好读。
 
 ### 5.1 NR Luma
 
@@ -252,6 +272,8 @@ B = Y + 1.8556U
 | 最终图 | 肤色、金属高光、暗部噪声 |
 
 ---
+
+![final](images/final_full.png)
 
 ## 8. 从教学到产品
 
