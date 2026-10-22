@@ -1,7 +1,7 @@
-# 从 .raw 到 RGB：手写 ISP 全流程（C++ 教学工程）
+# 从 RAW 到 RGB：手写 ISP 全流程（C++ 教学工程）
 
 > 一门按 **RAW 域 → RGB 域 → YUV 域** 组织的 ISP 实践课。
-> 输入是**真实的 16bit 无头 `.raw`**（Bayer + `.meta`），
+> 输入是**真实的 16bit 无头 RAW**（Bayer + `.meta`），
 > 输出是 RGB PNG（可选 YUV420）。
 > 20 个目录 = 20 节课，每个阶段都能单独编译、单独运行、单独观察。
 
@@ -101,6 +101,25 @@ DNG/EXIF 里；教学工程把它显式写出来，方便手改参数做实验�
 ![RAW 直方图](docs/images/raw_histogram.png)
 
 黑电平 2047、白电平 15000。左侧的尖峰就是“没光也有读数”的偏置。
+
+### 2.3 风景示例：`landscape.raw`
+
+为了演示真实的蓝天、草地、树木场景，新增了：
+
+```text
+data/landscape.raw     3088×2056，16bit little-endian，RGGB
+data/landscape.meta    Canon EOS D60：black 127/127/126/127，white 4000
+```
+
+来源是 raw.pixls.us 的 **Canon EOS D60 RAW (3:2)** 样本（CC0），
+用 rawpy 从 CRW 的 `raw_image_visible` 直接导出 Bayer 数据，不是从 RGB 反推。
+原 `sample.raw` / `sample.meta` **没有覆盖**。
+
+```bash
+./build/isp_pipeline --raw data/landscape.raw --meta data/landscape.meta   --out out/landscape/final.png
+```
+
+输出 1544×868，单线程约 3 秒。风景工程动画就是用这套实际 stage 图生成的。
 
 ---
 
@@ -440,9 +459,18 @@ BLC → LSC → BPC/DPC → NR RAW → AWB → Demosaic
 - [原理总论](docs/PRINCIPLES.md)：三域流程、每个模块的公式与取舍；
 - 每节的详细讲义：见上面的阶段总表；
 - [10 页 PPTX](docs/ISP_Raw_5min.pptx) / [PDF](docs/ISP_Raw_5min.pdf)；
-- [讲解视频](docs/ISP_Raw_5min.mp4)：1080p，约 5 分 27 秒；
-- [逐句讲解词](docs/PPT_讲解词.md)：与视频一致，含时间轴；
-- [视频封面](docs/images/video_poster.jpg)。
+- **通用 ISP 科普动画（新）**：[ISP_Overview_Animated.mp4](docs/ISP_Overview_Animated.mp4)：
+  1920×1080，24fps，**6:46**，讲 ISP 是什么、三个域、每个模块在做什么；
+  不介绍本工程，示例是蓝天/草地/树木的风景 RAW；
+- **RAW 工程动画**：[ISP_Raw_Animated_5min.mp4](docs/ISP_Raw_Animated_5min.mp4)：
+  5:01，用真实风景 RAW 的实际 stage 图演示；
+- **PPT 版视频（保留）**：[ISP_Raw_5min.mp4](docs/ISP_Raw_5min.mp4)：
+  1080p，5:27，按 PPT 讲；
+- [通用科普讲解词](docs/ISP_Overview_讲解词.md) / [工程动画讲解词](docs/ANIM_讲解词.md) / [PPT 版讲解词](docs/PPT_讲解词.md)；
+- [通用科普制作说明](docs/VIDEO_OVERVIEW_README.md) / [工程动画制作说明](docs/VIDEO_ANIMATED_README.md)；
+- [通用科普封面](docs/images/isp_overview_poster.jpg) / [工程动画封面](docs/images/animated_poster.jpg) / [PPT 版封面](docs/images/video_poster.jpg)。
+
+![通用 ISP 科普封面](docs/images/isp_overview_poster.jpg)
 
 ![PPT 预览](docs/images/ppt_preview.png)
 

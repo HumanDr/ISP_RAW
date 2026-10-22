@@ -205,3 +205,46 @@ python3 tools/make_script_doc.py
 - `docs/PPT_讲解词.md`：逐句讲稿 + 时间轴。
 
 改稿流程：改 `TEXTS` → `./tools/rebuild_video.sh`。
+
+
+### 11.2 动画版视频（不依赖 PPT）
+
+```bash
+cd /home/lchin/ISP_Raw_Course
+
+# 改稿：tools/anim_script.py
+PYTHONPATH=.pylibs python3 tools/anim_tts.py
+python3 tools/make_animation.py
+```
+
+产物：
+
+- `docs/ISP_Raw_Animated_5min.mp4`：1920×1080，24fps，5:01；
+- `docs/subtitles/ISP_Raw_Animated_5min.srt`；
+- `docs/ISP_Raw_Animated_5min.ass`；
+- `docs/ANIM_讲解词.md`；
+- `docs/VIDEO_ANIMATED_README.md`。
+
+动画用 PIL/numpy 逐帧绘制，不需要 LibreOffice，也不需要 PPT/PDF。
+PPT 版视频 `docs/ISP_Raw_5min.mp4` 不会被覆盖。
+
+
+### 11.3 通用 ISP 科普动画（不介绍工程）
+
+```bash
+cd /home/lchin/ISP_Raw_Course
+PYTHONPATH=.pylibs python3 tools/isp_overview_tts.py
+PYTHONPATH=.pylibs python3 tools/isp_overview_bounds.py
+python3 tools/make_isp_overview.py
+```
+
+产物：
+
+- `docs/ISP_Overview_Animated.mp4`：1920×1080，24fps，6:46；
+- `docs/subtitles/ISP_Overview_Animated.srt`；
+- `docs/ISP_Overview_Animated.ass`；
+- `docs/ISP_Overview_讲解词.md`；
+- `docs/VIDEO_OVERVIEW_README.md`。
+
+这条视频只讲 ISP 本身，不介绍具体工程；示例风景来自 raw.pixls.us 的
+Canon EOS D60 RAW 样本（CC0）。视频里的 RAW/RGB/YUV 画面来自 `docs/images/landscape/stage_*.png` 的实际工程输出。
