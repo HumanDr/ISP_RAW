@@ -482,7 +482,7 @@ BLC → LSC → BPC/DPC → NR RAW → AWB → Demosaic
 
 1. **LSC** 用图像自身统计近似，没有 flat-field 标定；
 2. **AWB** 是灰度世界 + 相机参考，不是完整 3A 闭环；
-3. **X-talking / CCM** 用简化 3×3，没有按色温插值；
+3. **X-talking / CC** 用简化 3×3，没有按色温插值；
 4. **HDR/WDR** 只做高光软压缩，没有多帧合成；
 5. **AE/AF** 只提供旁路统计，不驱动曝光/马达；
 6. 没有镜头畸变、色差、多帧降噪、SIMD/GPU、tile 处理；
