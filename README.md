@@ -495,7 +495,6 @@ BLC → LSC → BPC/DPC → NR RAW → AWB → Demosaic
 
 ## 11. 参考
 
-- B 站课程：[【图像ISP基础】从黑白电平RAW到彩色照片，数字成像的魔法](https://www.bilibili.com/video/BV1cbu16WEei/)，UP：养蝶的庭师；
 - 示例 RAW 来源：[raw.pixls.us](https://raw.pixls.us/)，Canon 5D3，CC0；
 - 颜色：Bruce Lindbloom 的 XYZ/sRGB 矩阵，sRGB IEC 61966-2-1；
 - 去马赛克：Malvar, He, Cutler, *High-Quality Linear Interpolation for Demosaicing of Bayer-Patterned Color Images*, ICASSP 2004。
