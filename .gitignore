@@ -20,3 +20,6 @@ __pycache__/
 .vscode/
 .idea/
 .DS_Store
+
+# 视频 / PPT / PDF 生成脚本（默认不提交）
+media_tools/

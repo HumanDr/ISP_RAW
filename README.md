@@ -333,8 +333,8 @@ ISP_Raw_Course/
 │   ├── sample.raw
 │   ├── sample.meta
 │   └── README.md
-├── docs/                     # 手册、原理、PPT、视频、插图
-└── out/                      # final.png / stage/*.isp
+├── docs/                     # 手册、原理、插图
+└── out/                      # 运行产物（gitignored）
 ```
 
 ### 5.1 一个 stage 长什么样
@@ -453,26 +453,11 @@ BLC → LSC → BPC/DPC → NR RAW → AWB → Demosaic
 
 ---
 
-## 9. 文档 / PPT / 视频
+## 9. 文档
 
 - [使用手册](docs/USAGE.md)：参数、每个 stage 的命令、`.raw/.meta` 格式、排错；
 - [原理总论](docs/PRINCIPLES.md)：三域流程、每个模块的公式与取舍；
-- 每节的详细讲义：见上面的阶段总表；
-- [10 页 PPTX](docs/ISP_Raw_5min.pptx) / [PDF](docs/ISP_Raw_5min.pdf)；
-- **通用 ISP 科普动画（新）**：[ISP_Overview_Animated.mp4](docs/ISP_Overview_Animated.mp4)：
-  1920×1080，24fps，**6:46**，讲 ISP 是什么、三个域、每个模块在做什么；
-  不介绍本工程，示例是蓝天/草地/树木的风景 RAW；
-- **RAW 工程动画**：[ISP_Raw_Animated_5min.mp4](docs/ISP_Raw_Animated_5min.mp4)：
-  5:01，用真实风景 RAW 的实际 stage 图演示；
-- **PPT 版视频（保留）**：[ISP_Raw_5min.mp4](docs/ISP_Raw_5min.mp4)：
-  1080p，5:27，按 PPT 讲；
-- [通用科普讲解词](docs/ISP_Overview_讲解词.md) / [工程动画讲解词](docs/ANIM_讲解词.md) / [PPT 版讲解词](docs/PPT_讲解词.md)；
-- [通用科普制作说明](docs/VIDEO_OVERVIEW_README.md) / [工程动画制作说明](docs/VIDEO_ANIMATED_README.md)；
-- [通用科普封面](docs/images/isp_overview_poster.jpg) / [工程动画封面](docs/images/animated_poster.jpg) / [PPT 版封面](docs/images/video_poster.jpg)。
-
-![通用 ISP 科普封面](docs/images/isp_overview_poster.jpg)
-
-![PPT 预览](docs/images/ppt_preview.png)
+- 每节的详细讲义：见上面的阶段总表。
 
 ---
 
