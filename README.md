@@ -457,8 +457,6 @@ BLC → LSC → BPC/DPC → NR RAW → AWB → Demosaic
 6. 没有镜头畸变、色差、多帧降噪、SIMD/GPU、tile 处理；
 7. 没有压缩 RAW（LibRaw/rawspeed）解析。
 
-这些不是“忘记做”，而是 5 分钟能讲完、13 秒能跑完的边界。
-原理文档最后一章列了从教学到产品还缺什么。
 
 ---
 
