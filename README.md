@@ -467,3 +467,11 @@ BLC → LSC → BPC/DPC → NR RAW → AWB → Demosaic
 - 示例 RAW 来源：[raw.pixls.us](https://raw.pixls.us/)，Canon 5D3，CC0；
 - 颜色：Bruce Lindbloom 的 XYZ/sRGB 矩阵，sRGB IEC 61966-2-1；
 - 去马赛克：Malvar, He, Cutler, *High-Quality Linear Interpolation for Demosaicing of Bayer-Patterned Color Images*, ICASSP 2004。
+
+---
+
+## 11. License
+
+本项目采用 [MIT License](LICENSE)。
+
+Copyright (c) 2025 miunasu
