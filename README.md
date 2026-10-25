@@ -426,22 +426,6 @@ void stage01_blc(Image& img, bool clip) {
 
 ---
 
-## 8. 与旧版 DNG 工程的区别
-
-| 项目 | 旧版 | 本工程 |
-|------|------|--------|
-| 输入 | 未压缩 DNG | **纯 `.raw` + `.meta`** |
-| 阶段 | 11 | **20** |
-| 组织 | 一条线性链 | **RAW / RGB / YUV 三域** |
-| RAW 域 | BLC/LSC/DPC/NR/WB/Demosaic | 同左，命名对齐课程 |
-| RGB 域 | CCM/Gamma/Sharpen | **NR Color / X-talking / CCM / HDR-WDR / Gamma / Color Space** |
-| YUV 域 | 无 | **NR Luma / Edge / Contrast / NR Chroma / Hue-Sat / Scale-Crop / Encoder** |
-| 输出 | 8bit PNG | **PNG + 可选 YUV420** |
-| 文档 | 每 stage 一篇 | 每 stage 一篇 + 前后对比 + 三域总论 |
-
-流程顺序以 B 站课程
-[《【图像ISP基础】从黑白电平RAW到彩色照片，数字成像的魔法》](https://www.bilibili.com/video/BV1cbu16WEei/)
-（UP：养蝶的庭师）的“技术总览”图为准：
 
 ```text
 BLC → LSC → BPC/DPC → NR RAW → AWB → Demosaic
@@ -453,7 +437,7 @@ BLC → LSC → BPC/DPC → NR RAW → AWB → Demosaic
 
 ---
 
-## 9. 文档
+## 8. 文档
 
 - [使用手册](docs/USAGE.md)：参数、每个 stage 的命令、`.raw/.meta` 格式、排错；
 - [原理总论](docs/PRINCIPLES.md)：三域流程、每个模块的公式与取舍；
@@ -461,7 +445,7 @@ BLC → LSC → BPC/DPC → NR RAW → AWB → Demosaic
 
 ---
 
-## 10. 边界：这不是量产 ISP
+## 9. 边界：这不是量产 ISP
 
 本工程刻意保留“能看懂”的最小实现：
 
@@ -478,7 +462,7 @@ BLC → LSC → BPC/DPC → NR RAW → AWB → Demosaic
 
 ---
 
-## 11. 参考
+## 10. 参考
 
 - 示例 RAW 来源：[raw.pixls.us](https://raw.pixls.us/)，Canon 5D3，CC0；
 - 颜色：Bruce Lindbloom 的 XYZ/sRGB 矩阵，sRGB IEC 61966-2-1；
